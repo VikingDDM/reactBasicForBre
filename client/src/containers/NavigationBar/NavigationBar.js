@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { userLogoutRequest } from '../../store/actions/usersActions';
 
@@ -28,7 +28,7 @@ class NavigationBar extends Component {
     
         return (
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                <Link to='/'><h1 className="navbar-brand">MERN App</h1></Link>
+                <h1 className="navbar-brand">MERN App</h1>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavBar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
